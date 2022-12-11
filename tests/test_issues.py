@@ -38,11 +38,7 @@ def test_issue_161():
             for generator_like_constituent in sublist:
                 s += generator_like_constituent.pt
 
-    file_path = (
-        os.path.join("tests", "samples", "issue-161.pkl")
-        if not vector._is_awkward_v2
-        else os.path.join("tests", "samples", "issue-161-v2.pkl")
-    )
+    file_path = os.path.join("tests", "samples", "issue-161-v2.pkl")
 
     f = open(file_path, "rb")
     a = ak.from_buffers(*pickle.load(f))

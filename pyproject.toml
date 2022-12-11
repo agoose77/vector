@@ -47,10 +47,10 @@ classifiers = [
 ]
 [project.optional-dependencies]
 awkward = [
-  "awkward>=1.2",
+  "awkward>=2",
 ]
 dev = [
-  "awkward>=1.2",
+  "awkward>=2",
   'numba>=0.50; python_version < "3.11"',
   "papermill>=2.4",
   "pytest>=6",
@@ -58,7 +58,7 @@ dev = [
   "xdoctest>=1",
 ]
 docs = [
-  "awkward>=1.2",
+  "awkward>=2",
   "ipykernel",
   "myst-parser>0.13",
   "nbsphinx",
